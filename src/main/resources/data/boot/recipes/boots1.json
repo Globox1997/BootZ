@@ -1,0 +1,19 @@
+{
+    "type": "minecraft:crafting_shaped",
+    "pattern": [
+        "eee",
+        "ede",
+        "eee"
+    ],
+    "key": {
+        "d": {
+            "item": "minecraft:leather_boots"
+        },
+        "e": {
+            "item": "minecraft:iron_ingot"
+        }
+    },
+    "result": {
+        "item": "boot:boots1"
+    }
+}
