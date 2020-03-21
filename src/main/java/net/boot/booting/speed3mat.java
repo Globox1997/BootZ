@@ -8,8 +8,8 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 public class speed3mat implements ArmorMaterial {
-    private static final int[] BASE_DURABILITY = new int[] { 6, 1, 1, 1 };
-    private static final int[] PROTECTION_AMOUNTS = new int[] { 3, 2, 3, 1 };
+    private static final int[] BASE_DURABILITY = new int[] {11, 1, 1, 1 };
+    private static final int[] PROTECTION_AMOUNTS = new int[] { 4, 2, 3, 1 };
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
@@ -28,7 +28,7 @@ public class speed3mat implements ArmorMaterial {
 
     @Override
     public SoundEvent getEquipSound() {
-        return SoundEvents.ITEM_ARMOR_EQUIP_LEATHER;
+        return SoundEvents.ITEM_ARMOR_EQUIP_DIAMOND;
     }
 
     @Override
