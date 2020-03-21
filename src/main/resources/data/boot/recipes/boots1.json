@@ -3,7 +3,7 @@
     "pattern": [
         "eee",
         "ede",
-        "eee"
+        "fef"
     ],
     "key": {
         "d": {
@@ -11,6 +11,9 @@
         },
         "e": {
             "item": "minecraft:iron_ingot"
+        },
+        "f": {
+            "item": "minecraft:iron_block"
         }
     },
     "result": {
