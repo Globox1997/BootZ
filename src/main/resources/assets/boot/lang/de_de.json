@@ -1,8 +1,8 @@
 {
-    "item.boot.boots1": "Speed Boots",
+    "item.boot.boots1": "Iron Reinforced Boots",
     "item.boot.boots1.tooltip": "§920% Speed",
-    "item.boot.boots2": "Speed Boots II",
+    "item.boot.boots2": "Gold Reinforced Boots",
     "item.boot.boots2.tooltip": "§940% Speed",
-    "item.boot.boots3": "Speed Boots III",
+    "item.boot.boots3": "Diamond Reinforced Boots III",
     "item.boot.boots3.tooltip": "§960% Speed"
 }
