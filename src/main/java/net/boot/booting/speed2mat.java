@@ -9,7 +9,7 @@ import net.minecraft.sound.SoundEvents;
 
 public class speed2mat implements ArmorMaterial {
     private static final int[] BASE_DURABILITY = new int[] { 15, 1, 1, 1 };
-    private static final int[] PROTECTION_AMOUNTS = new int[] { 3, 2, 3, 1 };
+    private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 2, 3, 1 };
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
