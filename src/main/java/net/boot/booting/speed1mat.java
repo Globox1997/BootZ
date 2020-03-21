@@ -7,12 +7,12 @@ import net.minecraft.sound.SoundEvent;
 import net.minecraft.sound.SoundEvents;
 
 public class speed1mat implements ArmorMaterial {
-    private static final int[] BASE_DURABILITY = new int[] { 7, 1, 1, 1 };
+    private static final int[] BASE_DURABILITY = new int[] { 11, 1, 1, 1 };
     private static final int[] PROTECTION_AMOUNTS = new int[] { 2, 2, 3, 1 };
 
     @Override
     public int getDurability(EquipmentSlot equipmentSlot) {
-        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 10;
+        return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 13;
     }
 
     @Override
