@@ -12,12 +12,12 @@ public class SpeedingItem {
         public static final ArmorMaterial SPEED1 = new speed1mat();
         public static final ArmorMaterial SPEED2 = new speed2mat();
         public static final ArmorMaterial SPEED3 = new speed3mat();
+        public static final ArmorMaterial SPEED4 = new speed4mat();
 
         public static final Item boots1 = register("boots1", new speedboots1(SPEED1, EquipmentSlot.FEET));
-        public static final Item boots2 = register("boots2",
-                        new speedboots2(SPEED2, EquipmentSlot.FEET));
-        public static final Item boots3 = register("boots3",
-                        new speedboots3(SPEED3, EquipmentSlot.FEET));
+        public static final Item boots2 = register("boots2", new speedboots2(SPEED2, EquipmentSlot.FEET));
+        public static final Item boots3 = register("boots3", new speedboots3(SPEED3, EquipmentSlot.FEET));
+        public static final Item boots4 = register("boots4", new speedboots4(SPEED4, EquipmentSlot.FEET));
 
         private static Item register(String id, Item item) {
                 return register(new Identifier("boot", id), item);

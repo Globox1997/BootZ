@@ -43,7 +43,12 @@ public class speed2mat implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 0;
+        return 0F;
+    }
+
+    @Override
+    public float getKnockbackResistance() {
+        return 0F;
     }
 
 }

@@ -3,6 +3,8 @@
     "item.boot.boots1.tooltip": "§920% Speed",
     "item.boot.boots2": "Gold Reinforced Boots",
     "item.boot.boots2.tooltip": "§940% Speed",
-    "item.boot.boots3": "Diamond Reinforced Boots III",
-    "item.boot.boots3.tooltip": "§960% Speed"
+    "item.boot.boots3": "Diamond Reinforced Boots",
+    "item.boot.boots3.tooltip": "§960% Speed",
+    "item.boot.boots4": "Netherite Reinforced Boots",
+    "item.boot.boots4.tooltip": "§960% Speed"
 }

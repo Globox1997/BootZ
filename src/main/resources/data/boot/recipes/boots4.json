@@ -1,0 +1,19 @@
+{
+  "type": "minecraft:crafting_shaped",
+  "pattern": [
+    " e ",
+    "ede",
+    " e "
+  ],
+  "key": {
+    "d": {
+      "item": "boot:boots3"
+    },
+    "e": {
+      "item": "minecraft:netherite_ingot"
+    }
+  },
+  "result": {
+    "item": "boot:boots4"
+  }
+}

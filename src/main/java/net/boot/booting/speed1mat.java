@@ -1,4 +1,5 @@
 package net.boot.booting;
+
 import net.minecraft.entity.EquipmentSlot;
 import net.minecraft.item.ArmorMaterial;
 import net.minecraft.item.Items;
@@ -42,7 +43,12 @@ public class speed1mat implements ArmorMaterial {
 
     @Override
     public float getToughness() {
-        return 0;
+        return 0F;
+    }
+
+    @Override
+    public float getKnockbackResistance() {
+        return 0F;
     }
 
 }

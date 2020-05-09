@@ -53,5 +53,15 @@ public class bloot {
             }
         });
 
+        LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
+            if (isone(id)) {
+                FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
+                        .withRolls(new BinomialLootTableRange(1, 0.002f))
+                        .withEntry(ItemEntry.builder(SpeedingItem.boots4));
+
+                supplier.withPool(poolBuilder);
+            }
+        });
+
     }
 }
