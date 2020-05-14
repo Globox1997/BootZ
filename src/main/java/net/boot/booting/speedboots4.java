@@ -40,7 +40,7 @@ public class speedboots4 extends ArmorItem {
     double z3 = random2.nextInt() % 27;
     double z4 = z3 / 100;
     if (slot == 0) {
-      if (bob.isFallFlying()) {
+      if (bob.isFallFlying() && !bob.isSwimming() && bob.isSprinting()) {
         world.addParticle(ParticleTypes.FLAME, bob.getX(), bob.getY() + z2, bob.getZ(), 0.0D, 0.0D, 0.0D);
       } else {
         world.addParticle(ParticleTypes.FLAME, bob.getX() + z2, bob.getY(), bob.getZ() + z4, 0.0D, 0.0D, 0.0D);

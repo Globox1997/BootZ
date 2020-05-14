@@ -41,7 +41,7 @@ public class speedboots1 extends ArmorItem {
         double z2 = z1 / 100;
         double z3 = random2.nextInt() % 25;
         double z4 = z3 / 100;
-        if (slot == 0) {
+        if (slot == 0 && !bob.isSwimming() && bob.isSprinting()) {
             zz++;
             if (zz == 3) {
                 zz = 0;
