@@ -26,40 +26,36 @@ public class bloot {
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (isone(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .withRolls(new BinomialLootTableRange(1, 0.3f))
-                        .withEntry(ItemEntry.builder(SpeedingItem.boots1));
+                        .rolls(new BinomialLootTableRange(1, 0.3f)).with(ItemEntry.builder(SpeedingItem.boots1));
 
-                supplier.withPool(poolBuilder);
+                supplier.pool(poolBuilder);
             }
         });
 
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (isone(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .withRolls(new BinomialLootTableRange(1, 0.15f))
-                        .withEntry(ItemEntry.builder(SpeedingItem.boots2));
+                        .rolls(new BinomialLootTableRange(1, 0.15f)).with(ItemEntry.builder(SpeedingItem.boots2));
 
-                supplier.withPool(poolBuilder);
+                supplier.pool(poolBuilder);
             }
         });
 
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (isone(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .withRolls(new BinomialLootTableRange(1, 0.02f))
-                        .withEntry(ItemEntry.builder(SpeedingItem.boots3));
+                        .rolls(new BinomialLootTableRange(1, 0.02f)).with(ItemEntry.builder(SpeedingItem.boots3));
 
-                supplier.withPool(poolBuilder);
+                supplier.pool(poolBuilder);
             }
         });
 
         LootTableLoadingCallback.EVENT.register((resourceManager, lootManager, id, supplier, setter) -> {
             if (isone(id)) {
                 FabricLootPoolBuilder poolBuilder = FabricLootPoolBuilder.builder()
-                        .withRolls(new BinomialLootTableRange(1, 0.002f))
-                        .withEntry(ItemEntry.builder(SpeedingItem.boots4));
+                        .rolls(new BinomialLootTableRange(1, 0.002f)).with(ItemEntry.builder(SpeedingItem.boots4));
 
-                supplier.withPool(poolBuilder);
+                supplier.pool(poolBuilder);
             }
         });
 
