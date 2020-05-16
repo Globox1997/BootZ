@@ -3,6 +3,7 @@ package net.boot.booting;
 import java.util.List;
 import java.util.Random;
 
+import net.boot.SpeedingItem;
 import net.minecraft.client.item.TooltipContext;
 import net.minecraft.entity.Entity;
 import net.minecraft.entity.EquipmentSlot;
@@ -39,8 +40,9 @@ public class speedboots4 extends ArmorItem {
     double z2 = z1 / 100;
     double z3 = random2.nextInt() % 27;
     double z4 = z3 / 100;
-    if (slot == 0) {
-      if (bob.isFallFlying() && !bob.isSwimming() && bob.isSprinting()) {
+    if (bob.getEquippedStack(EquipmentSlot.FEET).isItemEqual(new ItemStack(SpeedingItem.boots4)) && !bob.isSwimming()
+        && bob.isSprinting()) {
+      if (bob.isFallFlying()) {
         world.addParticle(ParticleTypes.FLAME, bob.getX(), bob.getY() + z2, bob.getZ(), 0.0D, 0.0D, 0.0D);
       } else {
         world.addParticle(ParticleTypes.FLAME, bob.getX() + z2, bob.getY(), bob.getZ() + z4, 0.0D, 0.0D, 0.0D);
