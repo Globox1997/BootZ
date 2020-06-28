@@ -12,7 +12,7 @@
     "sources": "https://github.com/Globox1997/BootZ"
   },
   "license": "GPLv3",
-  "icon": "assets/modid/oki.png",
+  "icon": "assets/boot/icon.png",
   "environment": "*",
   "entrypoints": {
     "main": [
