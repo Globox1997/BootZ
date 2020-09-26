@@ -9,11 +9,11 @@ import net.minecraft.sound.SoundEvents;
 
 public class speed4mat implements ArmorMaterial {
   private static final int[] BASE_DURABILITY = new int[] { 19, 1, 1, 1 };
-  private static final int[] PROTECTION_AMOUNTS = new int[] { 4, 2, 3, 1 };
+  private static final int[] PROTECTION_AMOUNTS = new int[] { 3, 2, 3, 1 };
 
   @Override
   public int getDurability(EquipmentSlot equipmentSlot) {
-    return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 23;
+    return BASE_DURABILITY[equipmentSlot.getEntitySlotId()] * 25;
   }
 
   @Override

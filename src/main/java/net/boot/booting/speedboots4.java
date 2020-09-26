@@ -23,7 +23,7 @@ import net.minecraft.world.World;
 public class speedboots4 extends ArmorItem {
 
   public speedboots4(ArmorMaterial material, EquipmentSlot slot) {
-    super(material, slot, new Item.Settings().group(ItemGroup.COMBAT));
+    super(material, slot, new Item.Settings().group(ItemGroup.COMBAT).fireproof());
   }
 
   @Override
@@ -31,6 +31,7 @@ public class speedboots4 extends ArmorItem {
     tooltip.add(new TranslatableText("item.boot.boots4.tooltip"));
   }
 
+  @Override
   public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
     StatusEffectInstance spd3 = new StatusEffectInstance(StatusEffect.byRawId(1), 0, 2, false, false);
     LivingEntity bob = (LivingEntity) entity;

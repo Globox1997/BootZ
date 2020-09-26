@@ -22,8 +22,6 @@ import net.minecraft.world.World;
 
 public class speedboots2 extends ArmorItem {
 
-    int zz;
-
     public speedboots2(ArmorMaterial material, EquipmentSlot slot) {
         super(material, slot, new Item.Settings().group(ItemGroup.COMBAT));
     }
@@ -33,6 +31,7 @@ public class speedboots2 extends ArmorItem {
         tooltip.add(new TranslatableText("item.boot.boots2.tooltip"));
     }
 
+    @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         StatusEffectInstance spd2 = new StatusEffectInstance(StatusEffect.byRawId(1), 0, 1, false, false);
         LivingEntity bob = (LivingEntity) entity;
@@ -44,9 +43,9 @@ public class speedboots2 extends ArmorItem {
         double z4 = z3 / 100;
         if (bob.getEquippedStack(EquipmentSlot.FEET).isItemEqual(new ItemStack(SpeedingItem.boots2))
                 && !bob.isSwimming() && bob.isSprinting()) {
-            zz++;
-            if (zz == 2) {
-                zz = 0;
+            int randomNumber = world.random.nextInt(3);
+            if (randomNumber == 2) {
+                randomNumber = 0;
                 if (bob.isFallFlying()) {
                     world.addParticle(ParticleTypes.FLAME, bob.getX(), bob.getY() + z2, bob.getZ(), 0.0D, 0.0D, 0.0D);
                 } else {

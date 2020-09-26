@@ -31,6 +31,7 @@ public class speedboots3 extends ArmorItem {
         tooltip.add(new TranslatableText("item.boot.boots3.tooltip"));
     }
 
+    @Override
     public void inventoryTick(ItemStack stack, World world, Entity entity, int slot, boolean selected) {
         StatusEffectInstance spd3 = new StatusEffectInstance(StatusEffect.byRawId(1), 0, 2, false, false);
         LivingEntity bob = (LivingEntity) entity;
