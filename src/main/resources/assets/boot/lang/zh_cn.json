@@ -1,0 +1,10 @@
+{
+    "item.boot.boots1": "铁制加固靴",
+    "item.boot.boots1.tooltip": "§920%速度",
+    "item.boot.boots2": "金制加固靴",
+    "item.boot.boots2.tooltip": "§940%速度",
+    "item.boot.boots3": "钻制加固靴",
+    "item.boot.boots3.tooltip": "§960%速度",
+    "item.boot.boots4": "下届合金制加固靴",
+    "item.boot.boots4.tooltip": "§960%速度"
+}
