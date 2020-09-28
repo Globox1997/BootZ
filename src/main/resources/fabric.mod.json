@@ -1,7 +1,7 @@
 {
   "schemaVersion": 1,
   "id": "boot",
-  "version": "1.3.3",
+  "version": "1.3.4",
   "name": "BootZ",
   "description": "Speed Boots!",
   "authors": [
@@ -9,7 +9,8 @@
   ],
   "contact": {
     "homepage": "https://www.curseforge.com/minecraft/mc-mods/bootz",
-    "sources": "https://github.com/Globox1997/BootZ"
+    "sources": "https://github.com/Globox1997/BootZ",
+    "issues": "https://github.com/Globox1997/BootZ/issues"
   },
   "license": "GPLv3",
   "icon": "assets/boot/icon.png",
