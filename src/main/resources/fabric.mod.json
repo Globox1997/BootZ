@@ -17,6 +17,9 @@
   "entrypoints": {
     "main": [
       "net.boot.speed"
+    ],
+    "modmenu": [
+      "net.boot.config.ModMenuIntegration"
     ]
   },
   "mixins": [],
